@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronDown, Users, BookOpen, Award, Heart, Mail, Phone, MapPin, Menu, X, Play, Download, ArrowRight, Star, TrendingUp, Target, Lightbulb, Sparkles, Zap, Shield, CheckCircle } from 'lucide-react';
-
+import logo from "./BWP_Option_2-removebg-preview.png";
 // Header Component
 const Header = ({ onDonateClick }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,7 +20,7 @@ const Header = ({ onDonateClick }) => {
     <header className={`fixed w-full z-50 transition-all duration-500 ${isScrolled ? 'bg-white/80 backdrop-blur-xl shadow-2xl border-b border-gray-100' : 'bg-transparent'}`}>
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <div className="flex items-center space-x-3">
-          <div className="relative">
+          {/* <div className="relative">
             <div className="w-12 h-12 bg-gradient-to-br from-orange-400 via-pink-400 to-purple-500 rounded-2xl flex items-center justify-center shadow-lg">
               <span className="text-white font-bold text-lg">BW</span>
             </div>
@@ -29,7 +29,9 @@ const Header = ({ onDonateClick }) => {
           <div>
             <h1 className="font-bold text-xl bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">Better Way</h1>
             <p className="text-sm text-orange-500 font-semibold -mt-1 tracking-wider">PASSAGE</p>
-          </div>
+          </div> */}
+
+          <img src={logo} alt="Logo" className="h-20 w-60 object-cover position: static" />
         </div>
         
         {/* Desktop Navigation */}
